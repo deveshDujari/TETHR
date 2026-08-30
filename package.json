@@ -1,12 +1,12 @@
 {
   "name": "tethr",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
+  "main": "app.js",
   "scripts": {
-    "start": "node server/server.mjs"
+    "start": "node server/index.js"
   },
   "dependencies": {
-    "@mediapipe/tasks-vision": "^1.0.1"
+    "@google/generative-ai": "^0.21.0"
   }
 }
