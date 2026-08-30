@@ -14,7 +14,8 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Prompt is required.' });
     }
 
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+    // Using gemini-2.5-flash endpoint for v1beta REST API
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
 
     const apiResponse = await fetch(apiUrl, {
       method: 'POST',
